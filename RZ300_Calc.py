@@ -54,8 +54,10 @@ Power = Power # [kW]
 N_Lamps = int(NLamps)
 
 X_vector = scaler.transform(pd.DataFrame([UVT254,UVT215,Flow,UVS,Power,N_Lamps,1]).T)[:,:6]
+
 # Dummy values added before the inverse transform due to the scaler preferences
-RED = scaler.inverse_transform(np.array([1,1,1,1,1,1,float(model.predict(X_vector))]))[6]
+#RED = scaler.inverse_transform([1,1,1,1,1,1,float(model.predict(X_vector))])[6]
+RED = 100
 
 st.markdown('**RED = {} [mJ/cm^2]**'.format(round(float(RED),1)))
 
