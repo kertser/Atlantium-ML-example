@@ -42,8 +42,6 @@ st.table(data.assign(hack='').set_index('hack').style.format('{:.2f}'))
 # Load the model
 model = keras.models.load_model('SavedModel_RED/REDmodel.h5')
 scaler = load(open('SavedModel_RED/scaler.pkl', 'rb'))
-#model = keras.models.load_model('C:\PythonProjects\DataScience\SavedModel_RED\REDmodel.h5')
-#scaler = load(open('C:\PythonProjects\DataScience\SavedModel_RED\scaler.pkl', 'rb'))
 
 # Single testing point:
 #88.6,63.33,257.611562,23.18,6.008833333,2,70.98111298
