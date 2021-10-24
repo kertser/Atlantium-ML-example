@@ -4,4 +4,3 @@ plotly
 streamlit
 tensorflow
 sklearn
-pickle
