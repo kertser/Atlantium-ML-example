@@ -85,7 +85,6 @@ fig.data[1].line.dash = 'dash'
 st.plotly_chart(fig)
 
 ### --- RED vs. Flow chart --- ###
-
 Flows = []
 X_vector = []
 
