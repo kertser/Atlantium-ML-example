@@ -44,7 +44,7 @@ model = keras.models.load_model('SavedModel_RED/REDmodel.h5')
 scaler = load(open('SavedModel_RED/scaler.pkl', 'rb'))
 
 # Single testing point:
-#88.6,63.33,257.611562,23.18,6.008833333,2,70.98111298
+# 88.6,63.33,257.611562,23.18,6.008833333,2,70.98111298
 
 UVT254 = np.exp(-UVT254/100) # [%-1cm]
 UVT215 = np.exp(-UVT215/100) # [%-1cm]
@@ -107,6 +107,6 @@ fig2.data[1].line.width = 0.7
 fig2.data[1].line.dash = 'dash'
 st.plotly_chart(fig2)
 
-#col1, col2 = st.columns(2)
-#col1.plotly_chart(fig)
-#col2.plotly_chart(fig2)
+# col1, col2 = st.columns(2)
+# col1.plotly_chart(fig)
+# col2.plotly_chart(fig2)
